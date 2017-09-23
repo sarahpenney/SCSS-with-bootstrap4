@@ -1,3 +1,4 @@
+// TODO: put variables in diff folders
 // COLORS
 $blue: #00619e;
 $black: #4a4a4a;
@@ -7,11 +8,17 @@ $light-grey: #efefef;
 $purple: #711972;
 $white: #ffffff;
 
+@font-face {
+    font-family: Meta-Roman;
+    src: url(/fonts/meta_normal_roman.ttf);
+}
 
-
+//MAIN VIEW STYLING
 body {
   margin: 0;
   font-family: 'Roboto', Bold;
+  overflow-x: hidden;
+  overflow-y: scroll;
 
   .banner {
     width: 100%;
@@ -23,14 +30,47 @@ body {
     background-color: $blue;
     width: 100%;
     height: 60px;
-    .navbar-nav {
-      width: 100%;
-    }
-    .nav-item {
+    .navbar-brand {
       flex-grow: 1;
     }
-    a {
-      color: $white;
+    .navbar-nav {
+      width: 100%;
+      .nav-item {
+        flex-grow: 1;
+        a {
+          color: $white;
+        }
+      }
+    }
+  }
+
+//CHANGING VIEW STYLING
+  .container {
+    width: 100%;
+    
+    h1 {
+      font-family: "Meta-Roman";
+      font-size: 50px;
+      line-height: 1.04;
+      text-align: left;
+      color: $black;
+    }
+    .media-links {
+      background-color: pink;
+      height: 52px;
+    }
+    .grey-box {
+      background-color: $mid-grey;
+      width: 100%;
+      height: 333px;
+    }
+    .talk {
+      background-color: $mid-grey;
+      height: 300px;
+    }
+    .advert {
+      background-color: pink;
+      height: 355px;
     }
   }
 
