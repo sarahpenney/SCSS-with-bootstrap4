@@ -1,86 +1,105 @@
 @font-face {
   font-family: Meta-Roman;
-  src: url(/fonts/meta_normal_roman.ttf); }
+  src: url("/fonts/meta_normal_roman.ttf"); }
 
 body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", Bold;
   overflow-y: scroll; }
-  body .banner {
-    width: 100%;
-    height: 110px;
-    background-color: #efefef; }
-  body .navbar {
-    background-color: #00619e;
-    width: 100%;
-    height: 60px; }
-    body .navbar .navbar-brand {
-      flex-grow: 1;
-      margin-right: 2em; }
-    body .navbar .navbar-nav {
-      width: 100%; }
-      body .navbar .navbar-nav .nav-item {
-        flex-grow: 1; }
-        body .navbar .navbar-nav .nav-item a {
-          color: #ffffff; }
-  body .container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 2em 1.5em; }
-    body .container .section {
-      margin-top: 35px; }
-    body .container .row {
-      width: 100%; }
-      body .container .row .left .home {
-        font-size: 14px;
-        color: #00619e; }
-      body .container .row .left h1 {
-        font-family: "Meta-Roman";
-        font-size: 50px;
-        line-height: 1.04;
-        text-align: left;
-        color: #4a4a4a;
-        margin-top: 10px; }
-      body .container .row .left .media-links {
-        height: 52px; }
-      body .container .row .left .grey-box {
-        background-color: #f0f0f0;
-        padding: 21px;
-        height: 333px;
-        margin-left: 0px; }
-        body .container .row .left .grey-box ul {
-          padding-left: 21px; }
-          body .container .row .left .grey-box ul li {
-            font-size: 15px;
-            line-height: 1.33;
-            text-align: left;
-            color: #00619e; }
-        body .container .row .left .grey-box .info {
-          display: flex;
-          flex-direction: row; }
-          body .container .row .left .grey-box .info .copy {
-            flex-grow: 2;
-            font-family: "Roboto";
-            font-size: 15px;
-            line-height: 1.6;
-            text-align: left;
-            color: #4a4a4a;
-            margin-right: 21px; }
-            body .container .row .left .grey-box .info .copy span {
+  body .main-container {
+    width: 1024px;
+    margin: auto; }
+    body .main-container .banner {
+      width: 100%;
+      height: 110px;
+      background-color: #efefef; }
+    body .main-container .navbar {
+      background-color: #00619e;
+      width: 100%;
+      height: 60px; }
+      body .main-container .navbar .navbar-brand {
+        flex-grow: 1;
+        margin-right: 1.5em; }
+      body .main-container .navbar .navbar-nav {
+        width: 100%; }
+        body .main-container .navbar .navbar-nav .nav-item {
+          flex-grow: 1; }
+          body .main-container .navbar .navbar-nav .nav-item a {
+            color: #ffffff; }
+    body .main-container .container {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      padding: 2em 1.5em; }
+      body .main-container .container .section {
+        margin-top: 35px; }
+      body .main-container .container .row {
+        width: 100%; }
+        body .main-container .container .row .left .home {
+          font-size: 14px;
+          color: #00619e; }
+        body .main-container .container .row .left h1 {
+          font-family: "Meta-Roman";
+          font-size: 50px;
+          line-height: 1.04;
+          text-align: left;
+          color: #4a4a4a;
+          margin-top: 10px; }
+        body .main-container .container .row .left .media-links {
+          height: 52px; }
+        body .main-container .container .row .left .grey-box {
+          background-color: #f0f0f0;
+          padding: 21px;
+          height: 333px;
+          margin-left: 0; }
+          body .main-container .container .row .left .grey-box ul {
+            padding-left: 21px; }
+            body .main-container .container .row .left .grey-box ul li {
+              font-size: 15px;
+              line-height: 1.33;
+              text-align: left;
               color: #00619e; }
-    body .container .talk {
-      background-color: #f0f0f0;
-      height: 300px; }
-      body .container .talk .top {
-        height: 40px;
-        width: 100%;
-        background-color: #00619e; }
-      body .container .talk .bottom {
-        height: 50px;
-        width: 100%;
-        background-color: #00619e; }
-    body .container .advert {
-      background-color: pink;
-      height: 355px; }
+          body .main-container .container .row .left .grey-box .info {
+            display: flex;
+            flex-direction: row; }
+            body .main-container .container .row .left .grey-box .info .copy {
+              flex-grow: 2;
+              font-family: "Roboto";
+              font-size: 15px;
+              line-height: 1.6;
+              text-align: left;
+              color: #4a4a4a;
+              margin-right: 21px; }
+              body .main-container .container .row .left .grey-box .info .copy span {
+                color: #00619e; }
+      body .main-container .container .talk {
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        background-color: #f0f0f0; }
+        body .main-container .container .talk .items {
+          flex-grow: 1;
+          background-color: #f0f0f0;
+          display: flex;
+          flex-direction: column; }
+          body .main-container .container .talk .items .item {
+            flex-grow: 1; }
+        body .main-container .container .talk .navbar {
+          height: 40px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center; }
+          body .main-container .container .talk .navbar .navbar-brand {
+            color: #ffffff;
+            font-family: Roboto;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: left; }
+        body .main-container .container .talk .bottom {
+          flex-grow: 1;
+          width: 100%;
+          background-color: #00619e; }
+      body .main-container .container .advert {
+        background-color: pink;
+        height: 355px; }
