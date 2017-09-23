@@ -1,4 +1,4 @@
-// TODO: put variables in diff folders
+// TODO: put variables in different folders
 // COLORS
 $blue: #00619e;
 $black: #4a4a4a;
@@ -16,8 +16,8 @@ $white: #ffffff;
 //MAIN VIEW STYLING
 body {
   margin: 0;
-  font-family: 'Roboto', Bold;
-  overflow-x: hidden;
+  padding: 0;
+  font-family: "Roboto", Bold;
   overflow-y: scroll;
 
   .banner {
@@ -32,6 +32,7 @@ body {
     height: 60px;
     .navbar-brand {
       flex-grow: 1;
+      margin-right: 2em;
     }
     .navbar-nav {
       width: 100%;
@@ -46,27 +47,81 @@ body {
 
 //CHANGING VIEW STYLING
   .container {
+    display: flex;
+    justify-content: center;
     width: 100%;
-    
-    h1 {
-      font-family: "Meta-Roman";
-      font-size: 50px;
-      line-height: 1.04;
-      text-align: left;
-      color: $black;
+    padding: 2em 1.5em;
+    .section {
+      margin-top: 35px;
     }
-    .media-links {
-      background-color: pink;
-      height: 52px;
-    }
-    .grey-box {
-      background-color: $mid-grey;
+    .row {
       width: 100%;
-      height: 333px;
+      .left{
+        // width: 630px;
+        .home {
+          font-size: 14px;
+          color: $blue;
+        }
+        h1 {
+          font-family: "Meta-Roman";
+          font-size: 50px;
+          line-height: 1.04;
+          text-align: left;
+          color: $black;
+          margin-top: 10px;
+        }
+        .media-links {
+          height: 52px;
+        }
+        .grey-box {
+          background-color: $mid-grey;
+          padding: 21px;
+          height: 333px;
+          margin-left: 0px;
+          ul {
+            padding-left: 21px;
+            li {
+              font-size: 15px;
+              line-height: 1.33;
+              text-align: left;
+              color: $blue;
+            }
+          }
+          .info {
+            display: flex;
+            flex-direction: row;
+            .copy {
+              flex-grow: 2;
+              font-family: "Roboto";
+              font-size: 15px;
+              line-height: 1.6;
+              text-align: left;
+              color: $black;
+              margin-right: 21px;
+              span {
+                color: $blue;
+              }
+            }
+            .image {
+            }
+          }
+        }
+      }
     }
+
     .talk {
       background-color: $mid-grey;
       height: 300px;
+      .top {
+        height: 40px;
+        width: 100%;
+        background-color: $blue;
+      }
+      .bottom {
+        height: 50px;
+        width: 100%;
+        background-color: $blue;
+      }
     }
     .advert {
       background-color: pink;
