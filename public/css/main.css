@@ -11,7 +11,13 @@ body {
   body .main-container .banner {
     width: 100%;
     height: 110px;
-    background-color: #efefef; }
+    background-color: #efefef;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    body .main-container .banner img {
+      width: 728px;
+      margin: auto; }
   body .main-container .navbar {
     background-color: #00619e;
     width: 100%;
