@@ -1,5 +1,4 @@
 // TODO: put variables and all components in seperate files
-//STOPPPPPPPPPPPPPPPPPPPPPPPPPP
 // COLORS
 $black: #4a4a4a;
 $dark-grey: #737277;
@@ -11,11 +10,9 @@ $blue-hover: #00548C;
 $blue-active: #004A7A;
 $purple: #711972;
 $purple-hover: #571157;
-$purple-acive: #460f47;
-//FONT SIZES
+$purple-acive: #460f47; //FONT SIZES
 $h1-desktop: 50px;
-$h1-mobile: 36px;
-//COMMON ELEMENT SIZES
+$h1-mobile: 36px; //COMMON ELEMENT SIZES
 @font-face {
     font-family: Meta-Roman;
     src: url("/fonts/meta_normal_roman.ttf");
@@ -28,7 +25,6 @@ body {
     font-family: Roboto;
     overflow-y: scroll;
 
-
     .main-container {
         .banner {
             width: 100%;
@@ -37,9 +33,10 @@ body {
             display: flex;
             flex-direction: column;
             justify-content: center;
+
             img {
-              width: 728px;
-              margin: auto;
+                width: 728px;
+                margin: auto;
             }
         }
 
@@ -65,7 +62,6 @@ body {
                 }
             }
         }
-
         //VIEW STYLING
         .container {
             display: flex;
@@ -74,7 +70,6 @@ body {
             padding-top: 2em;
 
             .one {
-              // width: 100%;
                 .talk {
                     height: 300px;
                     width: 300px;
@@ -88,7 +83,7 @@ body {
                         flex-direction: column;
 
                         .item {
-                            background-image: url(/../images/textbubble.jpg);
+                            background-image: url("/../images/textbubble.jpg");
                             background-repeat: no-repeat;
                             background-position-x: 8px;
                             background-position-y: 7px;
@@ -98,20 +93,19 @@ body {
                             flex-direction: row;
 
                             .count {
-                              width: 30px;
-                              font-size: 11px;
-                              font-family: Roboto;
-                              font-weight: bold;
-                              padding: 4px 0px 0px 0px;
-                              text-align: center;
-                              margin-right: 5px;
-                              }
-                              .title {
+                                width: 30px;
+                                font-size: 11px;
+                                font-family: Roboto;
+                                font-weight: bold;
+                                padding: 4px 0 0;
+                                text-align: center;
+                                margin-right: 5px;
+                            }
 
+                            .title {
                                 font-size: 15px;
                                 font-family: Roboto;
-                              }
-
+                            }
                         }
                     }
 
@@ -132,7 +126,6 @@ body {
 
                     .bottom {
                         flex-grow: 1;
-                        // width: 100%;
                         background-color: $blue;
                     }
                 }
@@ -163,8 +156,6 @@ body {
                     .grey-box {
                         background-color: $mid-grey;
                         padding: 21px;
-                        // height: 333px;
-                        // width: 630px;
 
                         ul {
                             padding-left: 21px;
@@ -202,14 +193,14 @@ body {
             .two {
                 display: flex;
                 flex-direction: row;
-                // padding-left: 15px;
 
                 .insight {
                     height: 300px;
-                    // width: 300px;
+                    width: 300px;
                     display: flex;
                     flex-direction: column;
                     background-color: $white;
+                    margin-top: 35px;
 
                     .items {
                         flex-grow: 1;
@@ -243,42 +234,48 @@ body {
                 }
 
                 .articles {
-                  display: inline-block;
+                    display: inline-block;
+
                     .article {
-                      border-bottom: solid 1px $light-grey;
+                        border-bottom: solid 1px $light-grey;
                     }
 
                     .card {
                         width: 50%;
                         border: 0;
                         float: right;
-                         h3 {
-                           padding: 1.5em 0px;
-                         }
+
+                        h3 {
+                            padding: 1.5em 0;
+                        }
+
                         .info {
-                          display: flex;
-                          flex-direction: row;
-                          p {
-                            flex-grow: 1;
+                            display: flex;
+                            flex-direction: row;
+
+                            p {
+                                flex-grow: 1;
                             }
 
                             img {
-                              width: 125px;
-                              flex-grow: 1;
+                                width: 125px;
+                                flex-grow: 1;
                             }
-                          }
+                        }
 
                         h3 {
-                          font-family: Roboto;
-                          font-weight: bold;
-                          font-size: 24px;
-                          color: $blue;
+                            font-family: Roboto;
+                            font-weight: bold;
+                            font-size: 24px;
+                            color: $blue;
                         }
+
                         p {
-                          font-family: "Roboto";
-                          font-size: 15px;
-                          color: $black;
+                            font-family: "Roboto";
+                            font-size: 15px;
+                            color: $black;
                         }
+
                         ul {
                             padding-left: 21px;
 
@@ -300,9 +297,12 @@ body {
     body {
         .main-container {
             .container {
-                .one {
+                width: 630px;
+
+                .one,
+                .two {
                     .right {
-                        width: 630px;
+                        width: 100%;
                         display: flex;
                         flex-direction: row;
 
@@ -315,7 +315,15 @@ body {
                         }
 
                         .advert {
-                            width: 307px;
+                            img {
+                                width: 99%;
+                            }
+                        }
+                    }
+
+                    &.two {
+                        img {
+                            margin-top: 35px;
                         }
                     }
                 }
@@ -324,20 +332,4 @@ body {
     }
 }
 // MOBILE
-@media only screen and (max-width: 600px) {
-    // body {
-    //     h1 {
-    //         font-size: $h1-mobile;
-    //     }
-    //     width: 100%;
-    //
-    //     .grey-box {
-    //         width: 630px;
-    //     }
-    //
-    //     .right {
-    //         display: flex;
-    //         flex-direction: column;
-    //     }
-    // }
-}
+@media only screen and (max-width: 600px) {}

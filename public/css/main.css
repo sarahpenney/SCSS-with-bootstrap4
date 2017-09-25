@@ -46,7 +46,7 @@ body {
         display: flex;
         flex-direction: column; }
         body .main-container .container .one .talk .items .item {
-          background-image: url(/../images/textbubble.jpg);
+          background-image: url("/../images/textbubble.jpg");
           background-repeat: no-repeat;
           background-position-x: 8px;
           background-position-y: 7px;
@@ -59,7 +59,7 @@ body {
             font-size: 11px;
             font-family: Roboto;
             font-weight: bold;
-            padding: 4px 0px 0px 0px;
+            padding: 4px 0 0;
             text-align: center;
             margin-right: 5px; }
           body .main-container .container .one .talk .items .item .title {
@@ -121,9 +121,11 @@ body {
       flex-direction: row; }
       body .main-container .container .two .insight {
         height: 300px;
+        width: 300px;
         display: flex;
         flex-direction: column;
-        background-color: #ffffff; }
+        background-color: #ffffff;
+        margin-top: 35px; }
         body .main-container .container .two .insight .items {
           flex-grow: 1;
           background-color: #ffffff;
@@ -155,7 +157,7 @@ body {
           border: 0;
           float: right; }
           body .main-container .container .two .articles .card h3 {
-            padding: 1.5em 0px; }
+            padding: 1.5em 0; }
           body .main-container .container .two .articles .card .info {
             display: flex;
             flex-direction: row; }
@@ -182,13 +184,22 @@ body {
               color: #00619e; }
 
 @media only screen and (max-width: 990px) {
-  body .main-container .container .one .right {
-    width: 630px;
-    display: flex;
-    flex-direction: row; }
-    body .main-container .container .one .right .talk {
-      margin-right: 23px; }
-      body .main-container .container .one .right .talk .items {
-        width: 300px; }
-    body .main-container .container .one .right .advert {
-      width: 307px; } }
+  body .main-container .container {
+    width: 630px; }
+    body .main-container .container .one .right,
+    body .main-container .container .two .right {
+      width: 100%;
+      display: flex;
+      flex-direction: row; }
+      body .main-container .container .one .right .talk,
+      body .main-container .container .two .right .talk {
+        margin-right: 23px; }
+        body .main-container .container .one .right .talk .items,
+        body .main-container .container .two .right .talk .items {
+          width: 300px; }
+      body .main-container .container .one .right .advert img,
+      body .main-container .container .two .right .advert img {
+        width: 99%; }
+    body .main-container .container .one.two img,
+    body .main-container .container .two.two img {
+      margin-top: 35px; } }
