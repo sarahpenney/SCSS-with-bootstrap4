@@ -36,93 +36,94 @@ body {
     flex-direction: column;
     justify-content: center;
     padding-top: 2em; }
-    body .main-container .container .one .talk {
-      height: 300px;
-      width: 300px;
-      display: flex;
-      flex-direction: column;
-      background-color: #f0f0f0;
-      display: flex;
-      flex-direction: column; }
-      body .main-container .container .one .talk .items {
+    body .main-container .container .one {
+      width: 100%; }
+      body .main-container .container .one .talk {
+        height: 300px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
         background-color: #f0f0f0;
         display: flex;
         flex-direction: column; }
-        body .main-container .container .one .talk .items .item {
-          background-image: url(/../images/textbubble.jpg);
-          background-repeat: no-repeat;
-          background-position-x: 8px;
-          background-position-y: 7px;
+        body .main-container .container .one .talk .items {
+          background-color: #f0f0f0;
+          display: flex;
+          flex-direction: column; }
+          body .main-container .container .one .talk .items .item {
+            background-image: url(/../images/textbubble.jpg);
+            background-repeat: no-repeat;
+            background-position-x: 8px;
+            background-position-y: 7px;
+            flex-grow: 1;
+            padding: 10px;
+            display: flex;
+            flex-direction: row; }
+            body .main-container .container .one .talk .items .item .count {
+              width: 30px;
+              font-size: 11px;
+              font-family: Roboto;
+              font-weight: bold;
+              padding: 4px 0px 0px 0px;
+              text-align: center;
+              margin-right: 5px; }
+            body .main-container .container .one .talk .items .item .title {
+              font-size: 15px;
+              font-family: Roboto; }
+        body .main-container .container .one .talk .navbar {
+          height: 40px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center; }
+          body .main-container .container .one .talk .navbar .navbar-brand {
+            color: #ffffff;
+            font-family: Roboto;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: left; }
+        body .main-container .container .one .talk .bottom {
           flex-grow: 1;
-          padding: 10px;
+          width: 100%;
+          background-color: #00619e; }
+      body .main-container .container .one .section {
+        margin-top: 35px; }
+      body .main-container .container .one .left .home {
+        font-size: 14px;
+        color: #00619e; }
+      body .main-container .container .one .left h1 {
+        font-family: "Meta-Roman";
+        font-size: 50px;
+        line-height: 1.04;
+        text-align: left;
+        color: #4a4a4a;
+        margin-top: 10px; }
+      body .main-container .container .one .left .media-links {
+        height: 52px; }
+      body .main-container .container .one .left .grey-box {
+        background-color: #f0f0f0;
+        padding: 21px;
+        height: 333px;
+        width: 630px; }
+        body .main-container .container .one .left .grey-box ul {
+          padding-left: 21px; }
+          body .main-container .container .one .left .grey-box ul li {
+            font-size: 15px;
+            line-height: 1.33;
+            text-align: left;
+            color: #00619e; }
+        body .main-container .container .one .left .grey-box .info {
           display: flex;
           flex-direction: row; }
-          body .main-container .container .one .talk .items .item .count {
-            width: 30px;
-            font-size: 11px;
-            font-family: Roboto;
-            font-weight: bold;
-            padding: 4px 0px 0px 0px;
-            text-align: center;
-            margin-right: 5px; }
-          body .main-container .container .one .talk .items .item .title {
+          body .main-container .container .one .left .grey-box .info .copy {
+            flex-grow: 2;
+            font-family: "Roboto";
             font-size: 15px;
-            font-family: Roboto; }
-      body .main-container .container .one .talk .navbar {
-        height: 40px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center; }
-        body .main-container .container .one .talk .navbar .navbar-brand {
-          color: #ffffff;
-          font-family: Roboto;
-          font-size: 18px;
-          font-weight: bold;
-          text-align: left; }
-      body .main-container .container .one .talk .bottom {
-        flex-grow: 1;
-        width: 100%;
-        background-color: #00619e; }
-    body .main-container .container .one .section {
-      margin-top: 35px; }
-    body .main-container .container .one .left .home {
-      font-size: 14px;
-      color: #00619e; }
-    body .main-container .container .one .left h1 {
-      font-family: "Meta-Roman";
-      font-size: 50px;
-      line-height: 1.04;
-      text-align: left;
-      color: #4a4a4a;
-      margin-top: 10px; }
-    body .main-container .container .one .left .media-links {
-      height: 52px; }
-    body .main-container .container .one .left .grey-box {
-      background-color: #f0f0f0;
-      padding: 21px;
-      height: 333px;
-      width: 630px;
-      margin-left: 0; }
-      body .main-container .container .one .left .grey-box ul {
-        padding-left: 21px; }
-        body .main-container .container .one .left .grey-box ul li {
-          font-size: 15px;
-          line-height: 1.33;
-          text-align: left;
-          color: #00619e; }
-      body .main-container .container .one .left .grey-box .info {
-        display: flex;
-        flex-direction: row; }
-        body .main-container .container .one .left .grey-box .info .copy {
-          flex-grow: 2;
-          font-family: "Roboto";
-          font-size: 15px;
-          line-height: 1.6;
-          text-align: left;
-          color: #4a4a4a;
-          margin-right: 21px; }
-          body .main-container .container .one .left .grey-box .info .copy span {
-            color: #00619e; }
+            line-height: 1.6;
+            text-align: left;
+            color: #4a4a4a;
+            margin-right: 21px; }
+            body .main-container .container .one .left .grey-box .info .copy span {
+              color: #00619e; }
     body .main-container .container .two {
       display: flex;
       flex-direction: row;

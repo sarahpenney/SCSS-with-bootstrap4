@@ -1,5 +1,5 @@
-console.log('loaded');
 
+// TODO: controllers / routes / in seperate files
 
 var mumsnetApp = angular.module('mumsnetApp', ['ngRoute']);
 
