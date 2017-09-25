@@ -2,13 +2,25 @@ console.log('loaded');
 
 
 var mumsnetApp = angular.module('mumsnetApp', ['ngRoute']);
+
 mumsnetApp.controller('mainController', function($scope) {
-  $scope.message = 'test angular message';
-  console.log('angular werk');
+  $scope.message = 'testing';
+
+
+// DUMMY CMS / CONTENT DATA
+  $scope.talklinks = [
+      {title: 'August vs September birth (schools)', count: '856'},
+      {title: 'Scared', count: '6'},
+      {title: 'First Time Pregnancy (2)', count: '300'},
+      {title: 'Please help!!!!', count: '25'},
+      {title: 'First Time Pregnancy (2)', count: '300'}
+  ];
+
+
 });
 
 
-// configure our routes
+// routes
 mumsnetApp.config(function($routeProvider) {
   $routeProvider
 
@@ -25,10 +37,8 @@ mumsnetApp.config(function($routeProvider) {
 });
 
 
-    // created the controller and test Angular's $scope
-mumsnetApp.controller('mainController', function($scope) {
-  $scope.message = 'testing home page...';
-});
+
+
 
 mumsnetApp.controller('otherPagesController', function($scope) {
   $scope.message = 'testing other pages...';

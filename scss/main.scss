@@ -1,27 +1,35 @@
-// TODO: put variables in different folders
+// TODO: put variables and all components in seperate files
+
 // COLORS
-$blue: #00619e;
 $black: #4a4a4a;
 $dark-grey: #737277;
 $mid-grey: #f0f0f0;
 $light-grey: #efefef;
-$purple: #711972;
 $white: #ffffff;
+$blue: #00619e;
+$blue-hover: #00548C;
+$blue-active: #004A7A;
+$purple: #711972;
+$purple-hover: #571157;
+$purple-acive: #460f47;
+//FONT SIZES
+$h1-desktop: 50px;
+$h1-mobile: 36px;
+//COMMON ELEMENT SIZES
 @font-face {
     font-family: Meta-Roman;
     src: url("/fonts/meta_normal_roman.ttf");
 }
 //MAIN VIEW STYLING
+
 body {
     margin: 0;
     padding: 0;
-    font-family: "Roboto", Bold;
+    font-family: Roboto;
     overflow-y: scroll;
+    overflow-x: hidden;
 
     .main-container {
-        width: 1024px;
-        margin: auto;
-
         .banner {
             width: 100%;
             height: 110px;
@@ -50,22 +58,83 @@ body {
                 }
             }
         }
-        //CHANGING VIEW STYLING
+        //VIEW STYLING
         .container {
             display: flex;
+            flex-direction: column;
             justify-content: center;
-            width: 100%;
-            padding: 2em 1.5em;
+            padding-top: 2em;
 
-            .section {
-                margin-top: 35px;
-            }
+            .one {
+                .talk {
+                    height: 300px;
+                    width: 300px;
+                    display: flex;
+                    flex-direction: column;
+                    background-color: $mid-grey;
+                    display: flex;
+                    flex-direction: column;
 
-            .row {
-                width: 100%;
+                    .items {
+                        background-color: $mid-grey;
+                        display: flex;
+                        flex-direction: column;
+
+                        .item {
+                            background-image: url(/../images/textbubble.jpg);
+                            background-repeat: no-repeat;
+                            background-position-x: 8px;
+                            background-position-y: 7px;
+                            flex-grow: 1;
+                            padding: 10px;
+                            display: flex;
+                            flex-direction: row;
+
+                            .count {
+                              width: 30px;
+                              font-size: 11px;
+                              font-family: Roboto;
+                              font-weight: bold;
+                              padding: 4px 0px 0px 0px;
+                              text-align: center;
+                              margin-right: 5px;
+                              }
+                              .title {
+
+                                font-size: 15px;
+                                font-family: Roboto;
+                              }
+
+                        }
+                    }
+
+                    .navbar {
+                        height: 40px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+
+                        .navbar-brand {
+                            color: $white;
+                            font-family: Roboto;
+                            font-size: 18px;
+                            font-weight: bold;
+                            text-align: left;
+                        }
+                    }
+
+                    .bottom {
+                        flex-grow: 1;
+                        width: 100%;
+                        background-color: $blue;
+                    }
+                }
+
+                .section {
+                    margin-top: 35px;
+                }
 
                 .left {
-                    // width: 630px;
                     .home {
                         font-size: 14px;
                         color: $blue;
@@ -73,7 +142,7 @@ body {
 
                     h1 {
                         font-family: "Meta-Roman";
-                        font-size: 50px;
+                        font-size: $h1-desktop;
                         line-height: 1.04;
                         text-align: left;
                         color: $black;
@@ -88,6 +157,7 @@ body {
                         background-color: $mid-grey;
                         padding: 21px;
                         height: 333px;
+                        width: 630px;
                         margin-left: 0;
 
                         ul {
@@ -118,56 +188,152 @@ body {
                                     color: $blue;
                                 }
                             }
-
-                            .image {}
                         }
                     }
                 }
             }
 
-            .talk {
-                height: 300px;
+            .two {
                 display: flex;
-                flex-direction: column;
-                background-color: $mid-grey;
+                flex-direction: row;
+                padding-left: 15px;
 
-                .items {
-                  flex-grow: 1;
-                    background-color: $mid-grey;
+                .insight {
+                    height: 300px;
+                    width: 300px;
                     display: flex;
                     flex-direction: column;
-                    .item {
-                      flex-grow: 1;
+                    background-color: $white;
+
+                    .items {
+                        flex-grow: 1;
+                        background-color: $white;
+                        display: flex;
+                        flex-direction: column;
+
+                        .item {
+                            flex-grow: 1;
+                            font-size: 15px;
+                            padding: 10px;
+                            border-bottom: solid 1px $light-grey;
+                        }
                     }
-                }
 
                     .navbar {
-                      height: 40px;
-                      display: flex;
-                      flex-direction: column;
-                      justify-content: center;
-                      .navbar-brand {
-                        color: $white;
-                        font-family: Roboto;
-                        font-size: 18px;
-                        font-weight: bold;
-                        text-align: left;
-                      }
+                        height: 40px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        background-color: $purple;
+
+                        .navbar-brand {
+                            color: $white;
+                            font-family: Roboto;
+                            font-size: 18px;
+                            font-weight: bold;
+                            text-align: left;
+                        }
+                    }
+                }
+
+                .articles {
+                    display: flex;
+                    flex-direction: row;
+                    .article {
+                      border-bottom: solid 1px $light-grey;
                     }
 
+                    .card {
+                        width: 50%;
+                        border: 0;
+                         h3 {
+                           padding: 1.5em 0px;
+                         }
+                        .info {
+                          display: flex;
+                          flex-direction: row;
+                          p {
+                            flex-grow: 1;
+                            }
 
-                .bottom {
-                    flex-grow: 1;
-                    // height: 50px;
-                    width: 100%;
-                    background-color: $blue;
+                            img {
+                              width: 125px;
+                              flex-grow: 1;
+                            }
+                          }
+
+                        h3 {
+                          font-family: Roboto;
+                          font-weight: bold;
+                          font-size: 24px;
+                          color: $blue;
+                        }
+                        p {
+                          font-family: "Roboto";
+                          font-size: 15px;
+                          color: $black;
+                        }
+                        ul {
+                            padding-left: 21px;
+
+                            li {
+                                font-size: 15px;
+                                font-family: Roboto;
+                                text-align: left;
+                                color: $blue;
+                            }
+                        }
+                    }
                 }
-            }
 
-            .advert {
-                background-color: pink;
-                height: 355px;
+                .insight {}
             }
         }
     }
+}
+// TABLET STYLING
+@media only screen and (max-width: 990px) {
+    body {
+        .main-container {
+            .container {
+                .one {
+                    .right {
+                        width: 630px;
+                        display: flex;
+                        flex-direction: row;
+
+                        .talk {
+                            margin-right: 23px;
+
+                            .items {
+                                width: 300px;
+                            }
+                        }
+
+                        .advert {
+                            width: 307px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// MOBILE
+@media only screen and (max-width: 600px) {
+    // body {
+    //     h1 {
+    //         font-size: $h1-mobile;
+    //     }
+    //     width: 100%;
+    //
+    //     .grey-box {
+    //         width: 630px;
+    //     }
+    //
+    //     .right {
+    //         display: flex;
+    //         flex-direction: column;
+    //     }
+    // }
 }
