@@ -37,8 +37,7 @@ body {
     padding-top: 2em; }
     body .main-container .container .one .talk {
       height: 300px;
-      display: flex;
-      flex-direction: column;
+      width: 300px;
       background-color: #f0f0f0;
       display: flex;
       flex-direction: column; }
@@ -153,7 +152,8 @@ body {
           border-bottom: solid 1px #efefef; }
         body .main-container .container .two .articles .card {
           width: 50%;
-          border: 0; }
+          border: 0;
+          float: right; }
           body .main-container .container .two .articles .card h3 {
             padding: 1.5em 0px; }
           body .main-container .container .two .articles .card .info {

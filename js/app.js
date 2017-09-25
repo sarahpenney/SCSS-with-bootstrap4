@@ -1,4 +1,3 @@
-
 // TODO: controllers / routes / in seperate files
 
 var mumsnetApp = angular.module('mumsnetApp', ['ngRoute']);
@@ -7,7 +6,7 @@ mumsnetApp.controller('mainController', function($scope) {
   $scope.message = 'testing';
 
 
-// DUMMY CMS / CONTENT DATA
+// DUMMY CONTENT DATA
   $scope.talklinks = [
       {title: 'August vs September birth (schools)', count: '856'},
       {title: 'Scared', count: '6'},
