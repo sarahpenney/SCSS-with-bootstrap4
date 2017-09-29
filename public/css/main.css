@@ -52,6 +52,25 @@ body {
   padding: 0;
   font-family: Roboto;
   overflow-y: scroll; }
+  body ul {
+    padding: 0px;
+    display: flex;
+    flex-direction: column; }
+    body ul li {
+      font-size: 15px;
+      font-weight: lighter;
+      list-style-type: none;
+      line-height: 1.33;
+      text-align: left;
+      color: #711972; }
+      body ul li span {
+        font-family: Roboto;
+        font-size: 15px;
+        list-style-type: none;
+        line-height: 1.33;
+        text-align: left;
+        color: #00619e;
+        padding-left: 10px; }
   body .main-container .banner {
     width: 100%;
     height: 110px;
@@ -94,13 +113,6 @@ body {
     body .main-container .container .grey-box {
       background-color: #f0f0f0;
       padding: 21px; }
-      body .main-container .container .grey-box ul {
-        padding-left: 21px; }
-        body .main-container .container .grey-box ul li {
-          font-size: 15px;
-          line-height: 1.33;
-          text-align: left;
-          color: #00619e; }
       body .main-container .container .grey-box .info {
         display: flex;
         flex-direction: column; }
@@ -158,6 +170,33 @@ body {
       body .main-container .container .talk .bottom {
         flex-grow: 1;
         background-color: #00619e; }
+    body .main-container .container .blogotd {
+      height: 320px;
+      width: 300px;
+      background-color: #f0f0f0;
+      display: flex;
+      flex-direction: column; }
+      body .main-container .container .blogotd .navbar {
+        background-color: #711972;
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        body .main-container .container .blogotd .navbar .navbar-brand {
+          color: #ffffff;
+          font-family: Roboto;
+          font-size: 18px;
+          font-weight: bold;
+          text-align: left; }
+      body .main-container .container .blogotd .info {
+        padding: 10px; }
+        body .main-container .container .blogotd .info h3 {
+          font-family: Roboto;
+          font-size: 18px;
+          font-weight: bold;
+          text-align: left;
+          color: #4a4a4a;
+          margin: 10px 0px 10px 0px; }
     body .main-container .container .insight {
       height: 300px;
       width: 300px;
@@ -180,7 +219,7 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background-color: #711972; }
+        background-color: #737277; }
         body .main-container .container .insight .navbar .navbar-brand {
           color: #ffffff;
           font-family: Roboto;
@@ -195,6 +234,8 @@ body {
       body .main-container .container .card .info {
         display: flex;
         flex-direction: row; }
+      body .main-container .container .card img {
+        height: fit-content; }
       body .main-container .container .card h3 {
         font-family: Roboto;
         font-weight: bold;
@@ -204,11 +245,6 @@ body {
         font-family: "Roboto";
         font-size: 15px;
         color: #4a4a4a; }
-      body .main-container .container .card ul li {
-        font-size: 15px;
-        font-family: Roboto;
-        text-align: left;
-        color: #00619e; }
   body .main-container .footer {
     margin-top: 60px;
     height: 492px;

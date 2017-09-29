@@ -25,6 +25,29 @@ body {
     padding: 0;
     font-family: Roboto;
     overflow-y: scroll;
+
+    ul {
+      padding: 0px;
+      display: flex;
+      flex-direction: column;
+      li {
+	      font-size: 15px;
+        font-weight: lighter;
+        list-style-type: none;
+        line-height: 1.33;
+        text-align: left;
+        color: $purple;
+        span {
+          font-family: Roboto;
+          font-size: 15px;
+          list-style-type: none;
+          line-height: 1.33;
+          text-align: left;
+          color: $blue;
+          padding-left: 10px;
+        }
+      }
+    }
     // MAIN VIEW CONTAINER
     .main-container {
         .banner {
@@ -95,17 +118,6 @@ body {
             .grey-box {
                 background-color: $mid-grey;
                 padding: 21px;
-
-                ul {
-                    padding-left: 21px;
-
-                    li {
-                        font-size: 15px;
-                        line-height: 1.33;
-                        text-align: left;
-                        color: $blue;
-                    }
-                }
 
                 .info {
                     display: flex;
@@ -190,6 +202,45 @@ body {
             }
             //END TALK SECTION
 
+            // BLOG OF THE DAY
+            .blogotd {
+                height: 320px;
+                width: 300px;
+                background-color: $mid-grey;
+                display: flex;
+                flex-direction: column;
+
+
+                .navbar {
+                  background-color: $purple;
+                    height: 40px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    .navbar-brand {
+                        color: $white;
+                        font-family: Roboto;
+                        font-size: 18px;
+                        font-weight: bold;
+                        text-align: left;
+                    }
+                }
+
+                .info {
+                  padding: 10px;
+                  h3 {
+  	               font-family: Roboto;
+  	                font-size: 18px;
+  	                font-weight: bold;
+  	                text-align: left;
+  	                color: $black;
+                    margin: 10px 0px 10px 0px;
+                  }
+              }
+            }
+            //END BLOG OF DAY
+
 
             // INSIGHT SECTION
             .insight {
@@ -219,7 +270,7 @@ body {
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-                    background-color: $purple;
+                    background-color: $dark-grey;
 
                     .navbar-brand {
                         color: $white;
@@ -231,7 +282,7 @@ body {
                 }
             }
             // END INSIGHT SECTION
-            
+
             // CARDS ARTICLES
             .card {
                 border: none;
@@ -244,6 +295,10 @@ body {
                 .info {
                     display: flex;
                     flex-direction: row;
+                }
+
+                img {
+                  height: fit-content;
                 }
 
                 h3 {
@@ -259,14 +314,6 @@ body {
                     color: $black;
                 }
 
-                ul {
-                    li {
-                        font-size: 15px;
-                        font-family: Roboto;
-                        text-align: left;
-                        color: $blue;
-                    }
-                }
             }
         }
         // END CARDS
