@@ -1,3 +1,48 @@
+.talk {
+  height: 300px;
+  width: 300px;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column; }
+  .talk .items {
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column; }
+    .talk .items .item {
+      background-image: url("/../images/textbubble.jpg");
+      background-repeat: no-repeat;
+      background-position-x: 8px;
+      background-position-y: 7px;
+      flex-grow: 1;
+      padding: 10px;
+      display: flex;
+      flex-direction: row; }
+      .talk .items .item .count {
+        width: 30px;
+        font-size: 11px;
+        font-family: Roboto;
+        font-weight: bold;
+        padding: 4px 0 0;
+        text-align: center;
+        margin-right: 5px; }
+      .talk .items .item .title {
+        font-size: 15px;
+        font-family: Roboto; }
+  .talk .navbar {
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .talk .navbar .navbar-brand {
+      color: #ffffff;
+      font-family: Roboto;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: left; }
+  .talk .bottom {
+    flex-grow: 1;
+    background-color: #00619e; }
+
 @font-face {
   font-family: Meta-Roman;
   src: url("/fonts/meta_normal_roman.ttf"); }
@@ -31,21 +76,55 @@ body {
         body .main-container .navbar .navbar-nav .nav-item a {
           color: #ffffff; }
   body .main-container .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-top: 2em; }
-    body .main-container .container .one .talk {
+    margin-top: 41px; }
+    body .main-container .container .section {
+      margin-top: 30px; }
+    body .main-container .container .home {
+      font-size: 14px;
+      color: #00619e; }
+    body .main-container .container h1 {
+      font-family: "Meta-Roman";
+      font-size: 50px;
+      line-height: 1.04;
+      text-align: left;
+      color: #4a4a4a;
+      margin-top: 10px; }
+    body .main-container .container .media-links {
+      height: 52px; }
+    body .main-container .container .grey-box {
+      background-color: #f0f0f0;
+      padding: 21px; }
+      body .main-container .container .grey-box ul {
+        padding-left: 21px; }
+        body .main-container .container .grey-box ul li {
+          font-size: 15px;
+          line-height: 1.33;
+          text-align: left;
+          color: #00619e; }
+      body .main-container .container .grey-box .info {
+        display: flex;
+        flex-direction: column; }
+        body .main-container .container .grey-box .info .copy {
+          flex-grow: 2;
+          font-family: "Roboto";
+          font-size: 15px;
+          line-height: 1.6;
+          text-align: left;
+          color: #4a4a4a;
+          margin-right: 21px; }
+          body .main-container .container .grey-box .info .copy span {
+            color: #00619e; }
+    body .main-container .container .talk {
       height: 300px;
       width: 300px;
       background-color: #f0f0f0;
       display: flex;
       flex-direction: column; }
-      body .main-container .container .one .talk .items {
+      body .main-container .container .talk .items {
         background-color: #f0f0f0;
         display: flex;
         flex-direction: column; }
-        body .main-container .container .one .talk .items .item {
+        body .main-container .container .talk .items .item {
           background-image: url("/../images/textbubble.jpg");
           background-repeat: no-repeat;
           background-position-x: 8px;
@@ -54,7 +133,7 @@ body {
           padding: 10px;
           display: flex;
           flex-direction: row; }
-          body .main-container .container .one .talk .items .item .count {
+          body .main-container .container .talk .items .item .count {
             width: 30px;
             font-size: 11px;
             font-family: Roboto;
@@ -62,144 +141,76 @@ body {
             padding: 4px 0 0;
             text-align: center;
             margin-right: 5px; }
-          body .main-container .container .one .talk .items .item .title {
+          body .main-container .container .talk .items .item .title {
             font-size: 15px;
             font-family: Roboto; }
-      body .main-container .container .one .talk .navbar {
+      body .main-container .container .talk .navbar {
         height: 40px;
         display: flex;
         flex-direction: column;
         justify-content: center; }
-        body .main-container .container .one .talk .navbar .navbar-brand {
+        body .main-container .container .talk .navbar .navbar-brand {
           color: #ffffff;
           font-family: Roboto;
           font-size: 18px;
           font-weight: bold;
           text-align: left; }
-      body .main-container .container .one .talk .bottom {
+      body .main-container .container .talk .bottom {
         flex-grow: 1;
         background-color: #00619e; }
-    body .main-container .container .one .section {
-      margin-top: 35px; }
-    body .main-container .container .one .left .home {
-      font-size: 14px;
-      color: #00619e; }
-    body .main-container .container .one .left h1 {
-      font-family: "Meta-Roman";
-      font-size: 50px;
-      line-height: 1.04;
-      text-align: left;
-      color: #4a4a4a;
-      margin-top: 10px; }
-    body .main-container .container .one .left .media-links {
-      height: 52px; }
-    body .main-container .container .one .left .grey-box {
-      background-color: #f0f0f0;
-      padding: 21px; }
-      body .main-container .container .one .left .grey-box ul {
-        padding-left: 21px; }
-        body .main-container .container .one .left .grey-box ul li {
-          font-size: 15px;
-          line-height: 1.33;
-          text-align: left;
-          color: #00619e; }
-      body .main-container .container .one .left .grey-box .info {
-        display: flex;
-        flex-direction: row; }
-        body .main-container .container .one .left .grey-box .info .copy {
-          flex-grow: 2;
-          font-family: "Roboto";
-          font-size: 15px;
-          line-height: 1.6;
-          text-align: left;
-          color: #4a4a4a;
-          margin-right: 21px; }
-          body .main-container .container .one .left .grey-box .info .copy span {
-            color: #00619e; }
-    body .main-container .container .two {
+    body .main-container .container .insight {
+      height: 300px;
+      width: 300px;
       display: flex;
-      flex-direction: row; }
-      body .main-container .container .two .insight {
-        height: 300px;
-        width: 300px;
+      flex-direction: column;
+      background-color: #ffffff;
+      margin-top: 35px; }
+      body .main-container .container .insight .items {
+        flex-grow: 1;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column; }
+        body .main-container .container .insight .items .item {
+          flex-grow: 1;
+          font-size: 15px;
+          padding: 10px;
+          border-bottom: solid 1px #efefef; }
+      body .main-container .container .insight .navbar {
+        height: 40px;
         display: flex;
         flex-direction: column;
-        background-color: #ffffff;
-        margin-top: 35px; }
-        body .main-container .container .two .insight .items {
-          flex-grow: 1;
-          background-color: #ffffff;
-          display: flex;
-          flex-direction: column; }
-          body .main-container .container .two .insight .items .item {
-            flex-grow: 1;
-            font-size: 15px;
-            padding: 10px;
-            border-bottom: solid 1px #efefef; }
-        body .main-container .container .two .insight .navbar {
-          height: 40px;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          background-color: #711972; }
-          body .main-container .container .two .insight .navbar .navbar-brand {
-            color: #ffffff;
-            font-family: Roboto;
-            font-size: 18px;
-            font-weight: bold;
-            text-align: left; }
-      body .main-container .container .two .articles {
-        display: inline-block; }
-        body .main-container .container .two .articles .article {
-          border-bottom: solid 1px #efefef; }
-        body .main-container .container .two .articles .card {
-          width: 50%;
-          border: 0;
-          float: right; }
-          body .main-container .container .two .articles .card h3 {
-            padding: 1.5em 0; }
-          body .main-container .container .two .articles .card .info {
-            display: flex;
-            flex-direction: row; }
-            body .main-container .container .two .articles .card .info p {
-              flex-grow: 1; }
-            body .main-container .container .two .articles .card .info img {
-              width: 125px;
-              flex-grow: 1; }
-          body .main-container .container .two .articles .card h3 {
-            font-family: Roboto;
-            font-weight: bold;
-            font-size: 24px;
-            color: #00619e; }
-          body .main-container .container .two .articles .card p {
-            font-family: "Roboto";
-            font-size: 15px;
-            color: #4a4a4a; }
-          body .main-container .container .two .articles .card ul {
-            padding-left: 21px; }
-            body .main-container .container .two .articles .card ul li {
-              font-size: 15px;
-              font-family: Roboto;
-              text-align: left;
-              color: #00619e; }
-
-@media only screen and (max-width: 990px) {
-  body .main-container .container {
-    width: 630px; }
-    body .main-container .container .one .right,
-    body .main-container .container .two .right {
-      width: 100%;
-      display: flex;
-      flex-direction: row; }
-      body .main-container .container .one .right .talk,
-      body .main-container .container .two .right .talk {
-        margin-right: 23px; }
-        body .main-container .container .one .right .talk .items,
-        body .main-container .container .two .right .talk .items {
-          width: 300px; }
-      body .main-container .container .one .right .advert img,
-      body .main-container .container .two .right .advert img {
-        width: 99%; }
-    body .main-container .container .one.two img,
-    body .main-container .container .two.two img {
-      margin-top: 35px; } }
+        justify-content: center;
+        background-color: #711972; }
+        body .main-container .container .insight .navbar .navbar-brand {
+          color: #ffffff;
+          font-family: Roboto;
+          font-size: 18px;
+          font-weight: bold;
+          text-align: left; }
+    body .main-container .container .card {
+      border: none;
+      border-bottom: solid 1px #efefef; }
+      body .main-container .container .card h3 {
+        padding: 1.5em 0; }
+      body .main-container .container .card .info {
+        display: flex;
+        flex-direction: row; }
+      body .main-container .container .card h3 {
+        font-family: Roboto;
+        font-weight: bold;
+        font-size: 24px;
+        color: #00619e; }
+      body .main-container .container .card p {
+        font-family: "Roboto";
+        font-size: 15px;
+        color: #4a4a4a; }
+      body .main-container .container .card ul li {
+        font-size: 15px;
+        font-family: Roboto;
+        text-align: left;
+        color: #00619e; }
+  body .main-container .footer {
+    margin-top: 60px;
+    height: 492px;
+    width: 100%;
+    background-color: #00619e; }

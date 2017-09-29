@@ -1,344 +1,418 @@
-<div ng-controller="mainController" class="container">
-    <div class="row one">
-        <div class="left col-lg-8">
-            <a class="home" href="#">Home >></a>
-            <h1>Pregnancy – advice and support from pregnancy to childbirth</h1>
-            <div class="section media-links">
-                <a href="#">
-                    <img border="0" alt="" src="/images/facebook.jpg" width="" height="">
-                </a>
-                <a href="#">
-                    <img border="0" alt="" src="/images/twitter.jpg" width="" height="">
-                </a>
-                <a href="#">
-                    <img border="0" alt="" src="/images/google.jpg" width="" height="">
-                </a>
-                <a href="#">
-                    <img border="0" alt="" src="/images/pinterest.jpg" width="" height="">
-                </a>
-                <a href="#">
-                    <img border="0" alt="" src="/images/linkedin.jpg" width="" height="">
-                </a>
-                <a href="#">
-                    <img border="0" alt="" src="/images/email.jpg" width="" height="">
-                </a>
-            </div>
-            <div class="section grey-box">
-                <div class="info">
-                    <div class="copy">
-                        <p>First things first: are you pregnant? Find out the <span>early signs of pregnancy</span> – and then what's ahead, with our <span>week-by-week guide.</span> We've got advice on <span>antenatal care, what you can eat, pregnancy scans,
-                          where to have your baby</span> and <span>what happens during labour.</span> If it's your first baby you'll have lots of questions, if it's not your first you'll have lots of experience – share both on our <span>Pregnancy Talk</span>                            forum.
-                        </p>
+<div ng-controller="mainController" class="">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <a class="home" href="#">Home >></a>
+
+                <div>
+                    <h1>Pregnancy - advice and support from pregnancy to childbirth</h1>
+
+                    <!-- SOCIAL MEDIA LINKS -->
+                    <div class="section media-links">
+                        <a href="#">
+                            <img border="0" alt="" src="/images/facebook.jpg" width="" height="">
+                        </a>
+                        <a href="#">
+                            <img border="0" alt="" src="/images/twitter.jpg" width="" height="">
+                        </a>
+                        <a href="#">
+                            <img border="0" alt="" src="/images/google.jpg" width="" height="">
+                        </a>
+                        <a href="#">
+                            <img border="0" alt="" src="/images/pinterest.jpg" width="" height="">
+                        </a>
+                        <a href="#">
+                            <img border="0" alt="" src="/images/linkedin.jpg" width="" height="">
+                        </a>
+                        <a href="#">
+                            <img border="0" alt="" src="/images/email.jpg" width="" height="">
+                        </a>
                     </div>
-                    <div class="image"></div>
-                    <img src="/images/greyimage.jpg">
-                </div>
-                <div class="links">
-                    <ul>
-                        <li>Download the Mumsnet Pregnancy Tracker app</li>
-                        <li>Best books about pregnancy and birth </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="right col-lg-4">
-            <div class="section talk">
-                <nav class="navbar navbar-light bg-faded">
-                    <a class="navbar-brand" href="#">Talk</a>
-                </nav>
-                <div ng-repeat="links in talklinks" class="items">
-                    <!-- TODO: ng-repeat -->
-                    <a href="#otherpages">
-                        <div class="item">
-                            <div class="count">{{links.count}}</div>
-                            <div class="title">{{links.title}}</div>
+
+                    <!-- GREY HEAD ARTICLE -->
+                    <div class="row grey-box">
+                        <div class="col-sm-8">
+                            <div class="info">
+
+                                <p>First things first: are you pregnant? Find out the <span>early signs of pregnancy</span> – and then what's ahead, with our <span>week-by-week guide.</span> We've got advice on <span>antenatal care, what you can eat, pregnancy scans,
+                                  where to have your baby</span> and <span>what happens during labour.</span> If it's your first baby you'll have lots of questions, if it's not your first you'll have lots of experience – share both on our <span>Pregnancy Talk</span>                                    forum.
+                                </p>
+
+                                <div class="links">
+                                    <ul>
+                                        <li>Download the Mumsnet Pregnancy Tracker app</li>
+                                        <li>Best books about pregnancy and birth </li>
+                                    </ul>
+                                </div>
+                            </div>
+
                         </div>
-                    </a>
-                </div>
-                <div class="bottom">
-                </div>
-            </div>
-            <div class="section advert">
-                <img src="/images/advert.jpg">
-            </div>
-        </div>
-    </div>
-    <!-- TODO: ng-repeat -->
-    <div class="row two">
-        <div class="articles col-lg-8">
-            <div class="card">
-                <h3>How pregnant am I?</h3>
 
-                <div class="info">
-                    <p>Use our pregnancy calculator to find out your baby's due date, then see what you can expect each week as your pregnancy progresses.
-                    </p>
-                    <img src="/images/articlepic.jpg">
-                </div>
+                        <div class="col-sm-4">
+                            <img src="images/greyimage.jpg" alt="" class="img-fluid">
+                        </div>
 
-                <div class="links">
-                    <ul>
-                        <li>one link</li>
-                        <li>two link </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card">
-                <h3>Early signs of pregnancy</h3>
-                <div class="info">
-                    <p>Whether you're trying to conceive or have just noticed some weird changes, there’s only one way to find out for sure if you're pregnant – POAS (pee on a stick).
-                    </p>
-                    <img src="/images/articlepic.jpg">
-                </div>
-                <div class="links">
-                    <ul>
-                        <li>one link</li>
-                        <li>two link </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card">
-                <h3>How pregnant am I?</h3>
-
-                <div class="info">
-                    <p>Use our pregnancy calculator to find out your baby's due date, then see what you can expect each week as your pregnancy progresses.
-                    </p>
-                    <img src="/images/articlepic.jpg">
-                </div>
-
-                <div class="links">
-                    <ul>
-                        <li>one link</li>
-                        <li>two link </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card">
-                <h3>Early signs of pregnancy</h3>
-                <div class="info">
-                    <p>Whether you're trying to conceive or have just noticed some weird changes, there’s only one way to find out for sure if you're pregnant – POAS (pee on a stick).
-                    </p>
-                    <img src="/images/articlepic.jpg">
-                </div>
-                <div class="links">
-                    <ul>
-                        <li>one link</li>
-                        <li>two link </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card">
-                <h3>How pregnant am I?</h3>
-
-                <div class="info">
-                    <p>Use our pregnancy calculator to find out your baby's due date, then see what you can expect each week as your pregnancy progresses.
-                    </p>
-                    <img src="/images/articlepic.jpg">
-                </div>
-
-                <div class="links">
-                    <ul>
-                        <li>one link</li>
-                        <li>two link </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card">
-                <h3>Early signs of pregnancy</h3>
-                <div class="info">
-                    <p>Whether you're trying to conceive or have just noticed some weird changes, there’s only one way to find out for sure if you're pregnant – POAS (pee on a stick).
-                    </p>
-                    <img src="/images/articlepic.jpg">
-                </div>
-                <div class="links">
-                    <ul>
-                        <li>one link</li>
-                        <li>two link </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card">
-                <h3>How pregnant am I?</h3>
-
-                <div class="info">
-                    <p>Use our pregnancy calculator to find out your baby's due date, then see what you can expect each week as your pregnancy progresses.
-                    </p>
-                    <img src="/images/articlepic.jpg">
-                </div>
-
-                <div class="links">
-                    <ul>
-                        <li>one link</li>
-                        <li>two link </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card">
-                <h3>Early signs of pregnancy</h3>
-                <div class="info">
-                    <p>Whether you're trying to conceive or have just noticed some weird changes, there’s only one way to find out for sure if you're pregnant – POAS (pee on a stick).
-                    </p>
-                    <img src="/images/articlepic.jpg">
-                </div>
-                <div class="links">
-                    <ul>
-                        <li>one link</li>
-                        <li>two link </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card">
-                <h3>How pregnant am I?</h3>
-
-                <div class="info">
-                    <p>Use our pregnancy calculator to find out your baby's due date, then see what you can expect each week as your pregnancy progresses.
-                    </p>
-                    <img src="/images/articlepic.jpg">
-                </div>
-
-                <div class="links">
-                    <ul>
-                        <li>one link</li>
-                        <li>two link </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card">
-                <h3>Early signs of pregnancy</h3>
-                <div class="info">
-                    <p>Whether you're trying to conceive or have just noticed some weird changes, there’s only one way to find out for sure if you're pregnant – POAS (pee on a stick).
-                    </p>
-                    <img src="/images/articlepic.jpg">
-                </div>
-                <div class="links">
-                    <ul>
-                        <li>one link</li>
-                        <li>two link </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card">
-                <h3>How pregnant am I?</h3>
-
-                <div class="info">
-                    <p>Use our pregnancy calculator to find out your baby's due date, then see what you can expect each week as your pregnancy progresses.
-                    </p>
-                    <img src="/images/articlepic.jpg">
-                </div>
-
-                <div class="links">
-                    <ul>
-                        <li>one link</li>
-                        <li>two link </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card">
-                <h3>Early signs of pregnancy</h3>
-                <div class="info">
-                    <p>Whether you're trying to conceive or have just noticed some weird changes, there’s only one way to find out for sure if you're pregnant – POAS (pee on a stick).
-                    </p>
-                    <img src="/images/articlepic.jpg">
-                </div>
-                <div class="links">
-                    <ul>
-                        <li>one link</li>
-                        <li>two link </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card">
-                <h3>How pregnant am I?</h3>
-
-                <div class="info">
-                    <p>Use our pregnancy calculator to find out your baby's due date, then see what you can expect each week as your pregnancy progresses.
-                    </p>
-                    <img src="/images/articlepic.jpg">
-                </div>
-
-                <div class="links">
-                    <ul>
-                        <li>one link</li>
-                        <li>two link </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card">
-                <h3>Early signs of pregnancy</h3>
-                <div class="info">
-                    <p>Whether you're trying to conceive or have just noticed some weird changes, there’s only one way to find out for sure if you're pregnant – POAS (pee on a stick).
-                    </p>
-                    <img src="/images/articlepic.jpg">
-                </div>
-                <div class="links">
-                    <ul>
-                        <li>one link</li>
-                        <li>two link </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card">
-                <h3>How pregnant am I?</h3>
-
-                <div class="info">
-                    <p>Use our pregnancy calculator to find out your baby's due date, then see what you can expect each week as your pregnancy progresses.
-                    </p>
-                    <img src="/images/articlepic.jpg">
-                </div>
-
-                <div class="links">
-                    <ul>
-                        <li>one link</li>
-                        <li>two link </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card">
-                <h3>Early signs of pregnancy</h3>
-                <div class="info">
-                    <p>Whether you're trying to conceive or have just noticed some weird changes, there’s only one way to find out for sure if you're pregnant – POAS (pee on a stick).
-                    </p>
-                    <img src="/images/articlepic.jpg">
-                </div>
-                <div class="links">
-                    <ul>
-                        <li>one link</li>
-                        <li>two link </li>
-                    </ul>
-                </div>
-            </div>
-
-
-        </div>
-        <div class="right col-lg-4">
-            <div class="section insight">
-                <nav class="navbar navbar-light bg-faded">
-                    <a class="navbar-brand" href="#otherpages">Mumsnet insight</a>
-                </nav>
-                <div class="">
-                    <div class="items">
-                        <!-- TODO: ng-repeat -->
-                        <a href="#otherpages">
-                            <div class="item">
-                                Tell Fairy Non Bio about your experience with baby health - £300 voucher to be won
-                            </div>
-                        </a>
-                        <a href="#otherpages">
-                            <div class="item">
-                                MyTutor GCSE and A Level tutoring review thread: see what our MN testers think
-                            </div>
-                        </a>
-                        <a href="#otherpages">
-                            <div class="item">
-                                Testers needed for Hellmann’s Tomato Ketchup Sweetened only with Honey – win £300
-                            </div>
-                        </a>
                     </div>
                 </div>
             </div>
-            <div class="section advert">
-                <img src="/images/advert.jpg">
+
+            <!-- TALK BOX AND ADVERT -->
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-sm-6 col-md-12">
+                        <div class="section talk">
+                            <nav class="navbar navbar-light bg-faded">
+                                <a class="navbar-brand" href="#">Talk</a>
+                            </nav>
+                            <div ng-repeat="links in talklinks" class="items">
+                                <a href="#otherpages">
+                                    <div class="item">
+                                        <div class="count">{{links.count}}</div>
+                                        <div class="title">{{links.title}}</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="bottom">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="section advert">
+                            <img src="/images/advert.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- LIST OF ARTICLES -->
+        <div class="row">
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-sm-6">
+                      <div class="card">
+                          <h3>Early signs of pregnancy</h3>
+                          <div class="info">
+                              <p>Whether you're trying to conceive or have just noticed some weird changes, there’s only one way to find out for sure if you're pregnant – POAS (pee on a stick).
+                              </p>
+                              <img src="/images/articlepic.jpg">
+                          </div>
+                          <div class="links">
+                              <ul>
+                                  <li>one link</li>
+                                  <li>two link </li>
+                              </ul>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                      <div class="card">
+                          <h3>Early signs of pregnancy</h3>
+                          <div class="info">
+                              <p>Whether you're trying to conceive or have just noticed some weird changes, there’s only one way to find out for sure if you're pregnant – POAS (pee on a stick).
+                              </p>
+                              <img src="/images/articlepic.jpg">
+                          </div>
+                          <div class="links">
+                              <ul>
+                                  <li>one link</li>
+                                  <li>two link </li>
+                              </ul>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                      <div class="card">
+                          <h3>Early signs of pregnancy</h3>
+                          <div class="info">
+                              <p>Whether you're trying to conceive or have just noticed some weird changes, there’s only one way to find out for sure if you're pregnant – POAS (pee on a stick).
+                              </p>
+                              <img src="/images/articlepic.jpg">
+                          </div>
+                          <div class="links">
+                              <ul>
+                                  <li>one link</li>
+                                  <li>two link </li>
+                              </ul>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                      <div class="card">
+                          <h3>Early signs of pregnancy</h3>
+                          <div class="info">
+                              <p>Whether you're trying to conceive or have just noticed some weird changes, there’s only one way to find out for sure if you're pregnant – POAS (pee on a stick).
+                              </p>
+                              <img src="/images/articlepic.jpg">
+                          </div>
+                          <div class="links">
+                              <ul>
+                                  <li>one link</li>
+                                  <li>two link </li>
+                              </ul>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                      <div class="card">
+                          <h3>Early signs of pregnancy</h3>
+                          <div class="info">
+                              <p>Whether you're trying to conceive or have just noticed some weird changes, there’s only one way to find out for sure if you're pregnant – POAS (pee on a stick).
+                              </p>
+                              <img src="/images/articlepic.jpg">
+                          </div>
+                          <div class="links">
+                              <ul>
+                                  <li>one link</li>
+                                  <li>two link </li>
+                              </ul>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                      <div class="card">
+                          <h3>Early signs of pregnancy</h3>
+                          <div class="info">
+                              <p>Whether you're trying to conceive or have just noticed some weird changes, there’s only one way to find out for sure if you're pregnant – POAS (pee on a stick).
+                              </p>
+                              <img src="/images/articlepic.jpg">
+                          </div>
+                          <div class="links">
+                              <ul>
+                                  <li>one link</li>
+                                  <li>two link </li>
+                              </ul>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                      <div class="card">
+                          <h3>Early signs of pregnancy</h3>
+                          <div class="info">
+                              <p>Whether you're trying to conceive or have just noticed some weird changes, there’s only one way to find out for sure if you're pregnant – POAS (pee on a stick).
+                              </p>
+                              <img src="/images/articlepic.jpg">
+                          </div>
+                          <div class="links">
+                              <ul>
+                                  <li>one link</li>
+                                  <li>two link </li>
+                              </ul>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                      <div class="card">
+                          <h3>Early signs of pregnancy</h3>
+                          <div class="info">
+                              <p>Whether you're trying to conceive or have just noticed some weird changes, there’s only one way to find out for sure if you're pregnant – POAS (pee on a stick).
+                              </p>
+                              <img src="/images/articlepic.jpg">
+                          </div>
+                          <div class="links">
+                              <ul>
+                                  <li>one link</li>
+                                  <li>two link </li>
+                              </ul>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                      <div class="card">
+                          <h3>Early signs of pregnancy</h3>
+                          <div class="info">
+                              <p>Whether you're trying to conceive or have just noticed some weird changes, there’s only one way to find out for sure if you're pregnant – POAS (pee on a stick).
+                              </p>
+                              <img src="/images/articlepic.jpg">
+                          </div>
+                          <div class="links">
+                              <ul>
+                                  <li>one link</li>
+                                  <li>two link </li>
+                              </ul>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                      <div class="card">
+                          <h3>Early signs of pregnancy</h3>
+                          <div class="info">
+                              <p>Whether you're trying to conceive or have just noticed some weird changes, there’s only one way to find out for sure if you're pregnant – POAS (pee on a stick).
+                              </p>
+                              <img src="/images/articlepic.jpg">
+                          </div>
+                          <div class="links">
+                              <ul>
+                                  <li>one link</li>
+                                  <li>two link </li>
+                              </ul>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                      <div class="card">
+                          <h3>Early signs of pregnancy</h3>
+                          <div class="info">
+                              <p>Whether you're trying to conceive or have just noticed some weird changes, there’s only one way to find out for sure if you're pregnant – POAS (pee on a stick).
+                              </p>
+                              <img src="/images/articlepic.jpg">
+                          </div>
+                          <div class="links">
+                              <ul>
+                                  <li>one link</li>
+                                  <li>two link </li>
+                              </ul>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                      <div class="card">
+                          <h3>Early signs of pregnancy</h3>
+                          <div class="info">
+                              <p>Whether you're trying to conceive or have just noticed some weird changes, there’s only one way to find out for sure if you're pregnant – POAS (pee on a stick).
+                              </p>
+                              <img src="/images/articlepic.jpg">
+                          </div>
+                          <div class="links">
+                              <ul>
+                                  <li>one link</li>
+                                  <li>two link </li>
+                              </ul>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                      <div class="card">
+                          <h3>Early signs of pregnancy</h3>
+                          <div class="info">
+                              <p>Whether you're trying to conceive or have just noticed some weird changes, there’s only one way to find out for sure if you're pregnant – POAS (pee on a stick).
+                              </p>
+                              <img src="/images/articlepic.jpg">
+                          </div>
+                          <div class="links">
+                              <ul>
+                                  <li>one link</li>
+                                  <li>two link </li>
+                              </ul>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                      <div class="card">
+                          <h3>Early signs of pregnancy</h3>
+                          <div class="info">
+                              <p>Whether you're trying to conceive or have just noticed some weird changes, there’s only one way to find out for sure if you're pregnant – POAS (pee on a stick).
+                              </p>
+                              <img src="/images/articlepic.jpg">
+                          </div>
+                          <div class="links">
+                              <ul>
+                                  <li>one link</li>
+                                  <li>two link </li>
+                              </ul>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                      <div class="card">
+                          <h3>Early signs of pregnancy</h3>
+                          <div class="info">
+                              <p>Whether you're trying to conceive or have just noticed some weird changes, there’s only one way to find out for sure if you're pregnant – POAS (pee on a stick).
+                              </p>
+                              <img src="/images/articlepic.jpg">
+                          </div>
+                          <div class="links">
+                              <ul>
+                                  <li>one link</li>
+                                  <li>two link </li>
+                              </ul>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                      <div class="card">
+                          <h3>Early signs of pregnancy</h3>
+                          <div class="info">
+                              <p>Whether you're trying to conceive or have just noticed some weird changes, there’s only one way to find out for sure if you're pregnant – POAS (pee on a stick).
+                              </p>
+                              <img src="/images/articlepic.jpg">
+                          </div>
+                          <div class="links">
+                              <ul>
+                                  <li>one link</li>
+                                  <li>two link </li>
+                              </ul>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-sm-6 col-md-12">
+
+                      <div class="section insight">
+                          <nav class="navbar navbar-light bg-faded">
+                              <a class="navbar-brand" href="#otherpages">Mumsnet insight</a>
+                          </nav>
+                          <div class="">
+                              <div class="items">
+                                  <!-- TODO: ng-repeat same as the Talk section -->
+                                  <a href="#otherpages">
+                                      <div class="item">
+                                          Tell Fairy Non Bio about your experience with baby health - £300 voucher to be won
+                                      </div>
+                                  </a>
+                                  <a href="#otherpages">
+                                      <div class="item">
+                                          MyTutor GCSE and A Level tutoring review thread: see what our MN testers think
+                                      </div>
+                                  </a>
+                                  <a href="#otherpages">
+                                      <div class="item">
+                                          Testers needed for Hellmann’s Tomato Ketchup Sweetened only with Honey – win £300
+                                      </div>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="section advert">
+                          <img src="/images/advert.jpg">
+                      </div>
+                    </div>
+
+
+                    <div class="col-sm-6 col-md-12">
+                        <!-- TODO: BLOG ABOUT KIDS -->
+                    </div>
+
+                    <div class="col-sm-6 col-md-12">
+                        <img src="" alt="" class="img-fluid">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
+
+
 </div>

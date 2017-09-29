@@ -1,0 +1,61 @@
+@import 'variables.scss';
+
+.talk {
+    height: 300px;
+    width: 300px;
+    background-color: $mid-grey;
+    display: flex;
+    flex-direction: column;
+
+    .items {
+        background-color: $mid-grey;
+        display: flex;
+        flex-direction: column;
+
+        .item {
+            background-image: url("/../images/textbubble.jpg");
+            background-repeat: no-repeat;
+            background-position-x: 8px;
+            background-position-y: 7px;
+            flex-grow: 1;
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+
+            .count {
+                width: 30px;
+                font-size: 11px;
+                font-family: Roboto;
+                font-weight: bold;
+                padding: 4px 0 0;
+                text-align: center;
+                margin-right: 5px;
+            }
+
+            .title {
+                font-size: 15px;
+                font-family: Roboto;
+            }
+        }
+    }
+
+    .navbar {
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .navbar-brand {
+            color: $white;
+            font-family: Roboto;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: left;
+        }
+    }
+
+    .bottom {
+        flex-grow: 1;
+        background-color: $blue;
+    }
+}
