@@ -4,6 +4,9 @@
 
 ### NOTES ABOUT THE PROJECT
 
+Showcasing AngularJS, Bootstrap4 and Sass.
+Small TODO's in the project showing what I would have done with more time and small sass changes to be made.
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine.
