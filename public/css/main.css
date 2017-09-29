@@ -53,7 +53,7 @@ body {
   font-family: Roboto;
   overflow-y: scroll; }
   body ul {
-    padding: 0px;
+    padding: 0;
     display: flex;
     flex-direction: column; }
     body ul li {
@@ -112,23 +112,19 @@ body {
       height: 52px; }
     body .main-container .container .grey-box {
       background-color: #f0f0f0;
-      padding: 21px; }
-      body .main-container .container .grey-box .info {
-        display: flex;
-        flex-direction: column; }
-        body .main-container .container .grey-box .info .copy {
-          flex-grow: 2;
-          font-family: "Roboto";
-          font-size: 15px;
-          line-height: 1.6;
-          text-align: left;
-          color: #4a4a4a;
-          margin-right: 21px; }
-          body .main-container .container .grey-box .info .copy span {
-            color: #00619e; }
+      padding: 21px;
+      margin-top: 40px; }
+      body .main-container .container .grey-box .copy {
+        flex-grow: 2;
+        font-family: "Roboto";
+        font-size: 15px;
+        line-height: 1.6;
+        text-align: left;
+        color: #4a4a4a;
+        margin-right: 21px; }
+        body .main-container .container .grey-box .copy span {
+          color: #00619e; }
     body .main-container .container .talk {
-      height: 300px;
-      width: 300px;
       background-color: #f0f0f0;
       display: flex;
       flex-direction: column; }
@@ -146,7 +142,6 @@ body {
           display: flex;
           flex-direction: row; }
           body .main-container .container .talk .items .item .count {
-            width: 30px;
             font-size: 11px;
             font-family: Roboto;
             font-weight: bold;
@@ -168,8 +163,15 @@ body {
           font-weight: bold;
           text-align: left; }
       body .main-container .container .talk .bottom {
-        flex-grow: 1;
-        background-color: #00619e; }
+        height: 50px;
+        background-color: #00619e;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center; }
+        body .main-container .container .talk .bottom .link {
+          flex-grow: 1;
+          align-self: center; }
     body .main-container .container .blogotd {
       height: 320px;
       width: 300px;
@@ -196,9 +198,8 @@ body {
           font-weight: bold;
           text-align: left;
           color: #4a4a4a;
-          margin: 10px 0px 10px 0px; }
+          margin: 10px 0; }
     body .main-container .container .insight {
-      height: 300px;
       width: 300px;
       display: flex;
       flex-direction: column;
@@ -211,9 +212,18 @@ body {
         flex-direction: column; }
         body .main-container .container .insight .items .item {
           flex-grow: 1;
-          font-size: 15px;
           padding: 10px;
-          border-bottom: solid 1px #efefef; }
+          border-bottom: solid 1px #efefef;
+          display: flex;
+          flex-direction: row; }
+          body .main-container .container .insight .items .item .image {
+            width: 160px;
+            height: 60px;
+            background-color: #efefef; }
+          body .main-container .container .insight .items .item p {
+            font-size: 15px;
+            padding-left: 10px;
+            margin-bottom: 0; }
       body .main-container .container .insight .navbar {
         height: 40px;
         display: flex;
@@ -235,7 +245,8 @@ body {
         display: flex;
         flex-direction: row; }
       body .main-container .container .card img {
-        height: fit-content; }
+        height: fit-content;
+        margin-left: 20px; }
       body .main-container .container .card h3 {
         font-family: Roboto;
         font-weight: bold;

@@ -27,26 +27,28 @@ body {
     overflow-y: scroll;
 
     ul {
-      padding: 0px;
-      display: flex;
-      flex-direction: column;
-      li {
-	      font-size: 15px;
-        font-weight: lighter;
-        list-style-type: none;
-        line-height: 1.33;
-        text-align: left;
-        color: $purple;
-        span {
-          font-family: Roboto;
-          font-size: 15px;
-          list-style-type: none;
-          line-height: 1.33;
-          text-align: left;
-          color: $blue;
-          padding-left: 10px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+
+        li {
+            font-size: 15px;
+            font-weight: lighter;
+            list-style-type: none;
+            line-height: 1.33;
+            text-align: left;
+            color: $purple;
+
+            span {
+                font-family: Roboto;
+                font-size: 15px;
+                list-style-type: none;
+                line-height: 1.33;
+                text-align: left;
+                color: $blue;
+                padding-left: 10px;
+            }
         }
-      }
     }
     // MAIN VIEW CONTAINER
     .main-container {
@@ -93,7 +95,6 @@ body {
             .section {
                 margin-top: 30px;
             }
-
             //HEADER COPY
             .home {
                 font-size: 14px;
@@ -113,37 +114,29 @@ body {
                 height: 52px;
             }
             //END HEADER COPY
-
             // GREY
             .grey-box {
                 background-color: $mid-grey;
                 padding: 21px;
+                margin-top: 40px;
 
-                .info {
-                    display: flex;
-                    flex-direction: column;
+                .copy {
+                    flex-grow: 2;
+                    font-family: "Roboto";
+                    font-size: 15px;
+                    line-height: 1.6;
+                    text-align: left;
+                    color: $black;
+                    margin-right: 21px;
 
-                    .copy {
-                        flex-grow: 2;
-                        font-family: "Roboto";
-                        font-size: 15px;
-                        line-height: 1.6;
-                        text-align: left;
-                        color: $black;
-                        margin-right: 21px;
-
-                        span {
-                            color: $blue;
-                        }
+                    span {
+                        color: $blue;
                     }
                 }
             }
             // END GREY
-
             //TALK SECTION
             .talk {
-                height: 300px;
-                width: 300px;
                 background-color: $mid-grey;
                 display: flex;
                 flex-direction: column;
@@ -164,7 +157,6 @@ body {
                         flex-direction: row;
 
                         .count {
-                            width: 30px;
                             font-size: 11px;
                             font-family: Roboto;
                             font-weight: bold;
@@ -196,12 +188,20 @@ body {
                 }
 
                 .bottom {
-                    flex-grow: 1;
+                    height: 50px;
                     background-color: $blue;
+                    padding-left: 30px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+
+                    .link {
+                        flex-grow: 1;
+                        align-self: center;
+                    }
                 }
             }
             //END TALK SECTION
-
             // BLOG OF THE DAY
             .blogotd {
                 height: 320px;
@@ -210,9 +210,8 @@ body {
                 display: flex;
                 flex-direction: column;
 
-
                 .navbar {
-                  background-color: $purple;
+                    background-color: $purple;
                     height: 40px;
                     display: flex;
                     flex-direction: column;
@@ -228,23 +227,22 @@ body {
                 }
 
                 .info {
-                  padding: 10px;
-                  h3 {
-  	               font-family: Roboto;
-  	                font-size: 18px;
-  	                font-weight: bold;
-  	                text-align: left;
-  	                color: $black;
-                    margin: 10px 0px 10px 0px;
-                  }
-              }
+                    padding: 10px;
+
+                    h3 {
+                        font-family: Roboto;
+                        font-size: 18px;
+                        font-weight: bold;
+                        text-align: left;
+                        color: $black;
+                        margin: 10px 0;
+                    }
+                }
             }
             //END BLOG OF DAY
-
-
             // INSIGHT SECTION
             .insight {
-                height: 300px;
+                // height: 300px;
                 width: 300px;
                 display: flex;
                 flex-direction: column;
@@ -259,9 +257,22 @@ body {
 
                     .item {
                         flex-grow: 1;
-                        font-size: 15px;
                         padding: 10px;
                         border-bottom: solid 1px $light-grey;
+                        display: flex;
+                        flex-direction: row;
+
+                        .image {
+                            width: 160px;
+                            height: 60px;
+                            background-color: $light-grey;
+                        }
+
+                        p {
+                            font-size: 15px;
+                            padding-left: 10px;
+                            margin-bottom: 0;
+                        }
                     }
                 }
 
@@ -282,7 +293,6 @@ body {
                 }
             }
             // END INSIGHT SECTION
-
             // CARDS ARTICLES
             .card {
                 border: none;
@@ -298,7 +308,8 @@ body {
                 }
 
                 img {
-                  height: fit-content;
+                    height: fit-content;
+                    margin-left: 20px;
                 }
 
                 h3 {
@@ -313,7 +324,6 @@ body {
                     font-size: 15px;
                     color: $black;
                 }
-
             }
         }
         // END CARDS
@@ -323,5 +333,8 @@ body {
             width: 100%;
             background-color: $blue;
         }
+    }
+    @media only screen and (max-width: 500px) {
+        body {}
     }
 }
