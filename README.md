@@ -31,7 +31,7 @@ npm install -D node-sass nodemon
 To compile the scss please run
 
 ```
-npm run watch-css
+npm run build-css
 ```
 
 ## Run
