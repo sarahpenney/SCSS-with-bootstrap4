@@ -1,8 +1,5 @@
-## PRACTICE USING BOOTSTRAP4
-
-
-## Getting Started
-
+## PRACTICE USING BOOTSTRAP4 for:
+## Desktop / iPad / Mobile
 These instructions will get you a copy of the project up and running on your local machine.
 
 
