@@ -1,4 +1,4 @@
-#  
+## PRACTICE USING BOOTSTRAP4
 
 
 
@@ -13,10 +13,10 @@ These instructions will get you a copy of the project up and running on your loc
 
 Please follow these instructions
 
-Download and 
+Download and
 
 ```
-npm install 
+npm install
 ```
 
 and install Sass
@@ -44,7 +44,6 @@ python -m SimpleHTTPServer
 
 ## Built With
 
-* [Bootstrap] 
-* [AngularJS] 
+* [Bootstrap4] 
+* [AngularJS]
 * [SCSS]
-
